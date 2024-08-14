@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Donation Management</h1>
+
+        <div class="form-container">
+            <h2>Add Donor</h2>
+            <form id="add-donor-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+                <label for="blood_type">Blood Type:</label>
+                <input type="text" id="blood_type" required>
+                <label for="last_donation_date">Last Donation Date (YYYY-MM-DD):</label>
+                <input type="date" id="last_donation_date" required>
+                <button type="submit">Add Donor</button>
+            </form>
+        </div>
+
+        <div class="view-container">
+            <h2>View Donors</h2>
+            <button onclick="viewDonors()">View All Donors</button>
+            <ul id="donor-list"></ul>
+        </div>
+
+        <div class="form-container">
+            <h2>Update Donor</h2>
+            <form id="update-donor-form">
+                <label for="update_id">Donor ID:</label>
+                <input type="number" id="update_id" required>
+                <label for="update_name">Name:</label>
+                <input type="text" id="update_name">
+                <label for="update_age">Age:</label>
+                <input type="number" id="update_age">
+                <label for="update_blood_type">Blood Type:</label>
+                <input type="text" id="update_blood_type">
+                <label for="update_last_donation_date">Last Donation Date (YYYY-MM-DD):</label>
+                <input type="date" id="update_last_donation_date">
+                <button type="submit">Update Donor</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Delete Donor</h2>
+            <form id="delete-donor-form">
+                <label for="delete_id">Donor ID:</label>
+                <input type="number" id="delete_id" required>
+                <button type="submit">Delete Donor</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Count Donors</h2>
+            <button onclick="countDonors()">Get Donor Count</button>
+            <p id="donor-count"></p>
+        </div>
+
+        <div class="form-container">
+            <h2>Search Donors by Blood Type</h2>
+            <form id="search-donor-form">
+                <label for="search_blood_type">Blood Type:</label>
+                <input type="text" id="search_blood_type" required>
+                <button type="submit">Search Donors</button>
+            </form>
+            <ul id="search-donor-list"></ul>
+        </div>       
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>

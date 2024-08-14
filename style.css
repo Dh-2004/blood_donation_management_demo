@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #c56e28, #973857, #5d87d6, #fbf26a);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(66, 15, 15, 0.1);
+}
+
+h1 {
+    color: #6b3de2; /* Blue */
+    border-bottom: 2px solid #30d564; /* Green */
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #ad33ff; /* Purple */
+}
+
+.form-container, .view-container {
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(45deg, #fbf26a, #f79d65, #ffbe76, #ffeaa7);
+    background-size: 400% 400%;
+    animation: containerGradient 10s ease infinite;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes containerGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: #6b3de2; /* Blue */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background-color: #4c0555; /* Dark Purple */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #7e06df; /* Darker Purple */
+}
+
+#donor-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#donor-list li {
+    background-color: #f8d7da; /* Light Red */
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+#donor-count {
+    font-weight: bold;
+    color: #721c24;
+    background-color: #f8d7da; /* Light Red */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    text-align: center;
+}
